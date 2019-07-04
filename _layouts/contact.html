@@ -1,0 +1,106 @@
+---
+# Copyright (c) 2018 Florian Klampfer <https://qwtel.com/>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+layout: base
+---
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 100%;
+}
+
+.heading h3 {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.heading p {
+  font-style: italic;
+  font-size: 15px;
+}
+
+</style>
+</head>
+<body>
+  <div class="heading">
+    <h3>Contact Us!</h3>
+    <p>We would love to hear from you!</p>
+  </div>
+
+<div class="container">
+  <form action="https://formspree.io/info@bridge2china.co.uk" method="POST">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+    <label for="number">Phone Number</label>
+    <input type="text" id="number" name="phonenumber" placeholder="Your phone number.." required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="_replyto" placeholder="Your email address.." required>
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="ireland">Ireland</option>
+      <option value="new zealand">New Zealand</option>
+      <option value="south africa">South Africa</option>
+      <option value="uk">UK</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">What would you like to contact us about?</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Send">
+  </form>
+</div>
+
+</body>
+</html>

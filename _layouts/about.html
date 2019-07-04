@@ -1,0 +1,231 @@
+---
+# Copyright (c) 2018 Florian Klampfer <https://qwtel.com/>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+layout: base
+---
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.heading h3 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.heading p {
+  font-style: italic;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  width: 900px;
+  margin: auto;
+}
+
+
+.img {
+  width:100px;
+  height:100px;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+}
+
+.card p {
+  opacity: 0.7;
+  font-size: 15px;
+}
+
+.card {
+  width: 275px;
+  height:550px;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgb(230,230,230);
+  text-align: center;
+  padding: 20px;
+  border: 1px solid rgb(230,230,230);
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.card-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h3 {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.cards1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  height: 300px;
+}
+
+.card-product {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+}
+
+.card-product img {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+}
+
+.card-product h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}
+
+
+
+</style>
+</head>
+<body
+
+class="card-category" style="background-image: linear-gradient(rgba(211,211,211,0.1), rgba(211,211,211,0.1))">
+
+
+
+  <div class="heading">
+    <h3>"Your bridge to China!"</h3>
+    <p>
+Looking for a new experience or new career?</p>
+
+<p>Want to change the pace of your work and lifestyle?</p>
+
+<p>Looking for a new culture to explore and immerse yourself in?</p>
+
+<p>Finished college, but not quite ready to jump into your Masters degree or the corporate world yet?</p>
+
+<p>Well teaching in China might be just the thing for you!</p>
+
+<p>But how to do it? We know from experience that the process of job-hunting and relocating to China can be quite stressful. The paperwork and language barrier are just a few of the many problems plaguing foreigners as they try and navigate this logistical conundrum.</p>
+
+<p>We specialize in matching bright minds who are looking to take this plunge with employers in China.  We will prepare our recruits to leave their home countries with the proper documents and expectations, making life adjusting to this new culture as smooth as possible!</p>
+  </div>
+
+<div class="container">
+  <h3 class="text-center">Why Teach?</h3>
+  <div class="card-product">
+  <img src="/icons/star.png">
+  <div class="card-product-infos">
+    <h3>Competitive monthly salary (can range between £1,200 and £2,300)</h3>
+  </div>
+  </div>
+  <div class="card-product">
+  <img src="/icons/star.png">
+  <div class="card-product-infos">
+    <h3>Between £500 and £1,000 pounds flight allowance (depending on the employer)</h3>
+  </div>
+  </div>
+  <div class="card-product">
+  <img src="/icons/star.png">
+  <div class="card-product-infos">
+    <h3>Maximum 20 teaching hours per week</h3>
+  </div>
+  </div>
+  <div class="card-product">
+  <img src="/icons/star.png">
+  <div class="card-product-infos">
+    <h3>Housing allowance or accommodation provided by the company/school</h3>
+  </div>
+  </div>
+  <div class="card-product">
+  <img src="/icons/star.png">
+  <div class="card-product-infos">
+    <h3>Chinese medical and accident insurance</h3>
+  </div>
+  </div>
+   <div class="card-product">
+  <img src="/icons/star.png">
+  <div class="card-product-infos">
+    <h3>Reimbursed residence permit and medical check (obligatory)</h3>
+  </div>
+  </div>
+  <div class="card-product">
+  <img src="/icons/star.png">
+  <div class="card-product-infos">
+    <h3>Holiday allowance provided during school breaks</h3>
+  </div>
+  </div>
+</div>
+
+  <div class="container">
+    <h3 class="text-center">Why China?</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="/icons/money.png" alt="Money">
+        <h4>Save Money</h4>
+        <p>The salaries in China reflect the high demand for teachers. Combined with China's low cost of living, this allows teachers the opportunity to save quite a bit of money!</p>
+        </div>
+        <div class="card">
+        <img src="/icons/airplane.png" alt="Travel">
+        <h4>Travel</h4>
+        <p>Teachers are given numerous long weekends and long school holidays (usually around 7 weeks in Summer and 5 weeks in Winter). Combined with sweet deals from Asia's budget airlines, this is a recipe to tick many exotic destinations off of the bucket list!</p>
+        </div>
+        <div class="card">
+        <img src="/icons/language.png" alt="Chinese">
+        <h4>Learn Chinese</h4>
+        <p>One can improve their marketability by learning the language with the most native speakers on earth!</p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
