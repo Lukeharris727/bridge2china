@@ -55,12 +55,12 @@ input[type=submit]:hover {
   width: 100%;
 }
 
-.heading h3 {
+.header h3 {
   font-weight: bold;
   font-size: 25px;
 }
 
-.heading p {
+.header p {
   font-style: italic;
   font-size: 15px;
 }
@@ -68,7 +68,8 @@ input[type=submit]:hover {
 </style>
 </head>
 <body>
-  <div class="heading">
+
+  <div class="header">
     <h3>Contact Us!</h3>
     <p>We would love to hear from you!</p>
   </div>
@@ -82,7 +83,7 @@ input[type=submit]:hover {
     <input type="text" id="number" name="phonenumber" placeholder="Your phone number.." required>
 
     <label for="email">Email</label>
-    <input type="email" id="email" name="_replyto" placeholder="Your email address.." required>
+    <input type="text" id="email" name="_replyto" placeholder="Your email address.." required>
 
     <label for="country">Country</label>
     <select id="country" name="country">
@@ -93,6 +94,7 @@ input[type=submit]:hover {
       <option value="south africa">South Africa</option>
       <option value="uk">UK</option>
       <option value="usa">USA</option>
+       <option value="other">Other</option>
     </select>
 
     <label for="subject">What would you like to contact us about?</label>

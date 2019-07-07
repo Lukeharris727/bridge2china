@@ -16,41 +16,135 @@
 
 layout: base
 ---
-<h3>Step 1 - Application Review</h3>
-<p>Our team will review your application to ensure all requirements are met and you are a good fit. We will contact you within 5 working days.</p>
 
-<h3>Step 2 - Skype Interview</h3>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.collapser {
+  background-color: #263859;
+  color: white;
+  cursor: pointer;
+  padding: 25px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.collapser:hover {
+  background-color: #17223B;
+}
+
+.inside {
+  padding: 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.padding {
+  padding: 10px;
+}
+
+.title h2 {
+  font-weight: bold;
+  color: black;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="title">
+<h2> Recruitment Process </h2>
+</div>
+
+<button class="collapser">Step 1 - Application Review</button>
+<div class="inside">
+  <p>Our team will review your application to ensure all requirements are met and you are a good fit. We will contact you within 5 working days.</p>
+</div>
+
+<div class="padding">
+</div>
+
+<button class="collapser">Step 2 - Skype Interview</button>
+<div class="inside">
 <p>During this interview, we will further assess your qualifications, skills and experience, as well as your language skills, motivation and interpersonal skills to check whether you qualify to teach in China. We will also use this opportunity to provide you with as much information as possible about what to expect (and not to expect) about your teaching adventure in China.<p>
 <div>
 <p>Please remember this interview is also an opportunity for you to ask us any questions or raise any concerns that you may have about the job or moving to China in general. We understand that you may have specific needs or desires (e.g. city or age preference) and will make sure that you get the best experience possible in China.</p>
 </div>
+</div>
 
-<h3>Step 3 - Placement Interview</h3>
+<div class="padding">
+</div>
+
+<button class="collapser">Step 3 - Placement Interview</button>
+<div class="inside">
 <p>If you pass the Skype interview, you will be invited to a second interview with our Chinese partner. This interview will be even more focused on your skills as a teacher and may include an online demo lesson to assess which age group you suit best to teach.</p>
 <div>
 <p>Following selection by our Chinese partner, you will then be formally hired!</p>
 </div>
+</div>
 
-<h3>Step 4 - Congratulations, you passed the interview! What next?</h3>
+<div class="padding">
+</div>
+
+<button class="collapser">Step 4 - Congratulations, you passed the interview! What next?</button>
+<div class="inside">
 <p>Once you’ve been formally hired, we will work with our Chinese partner the right school for you. The school may (or may not) want to interview you again, and ask for a demo lesson. We will:</p>
  <ul>
       <li>Assist you in preparing all documents needed for your visa application</li>
       <li>Provide teaching tips, China survival tips and support on other practical arrangements to be made before you leave (e.g. insurance, vaccinations, packing)</li>
       <li>Provide opportunities to connect with other teachers before leaving to China</li>
     </ul>
-<h3>Step 5 - Fasten your seatbelts, take-off to China! What happens after you’ve arrived?</h3>
+</div>
+
+<div class="padding">
+</div>
+
+<button class="collapser">Step 5 - Fasten your seatbelts, take-off to China! What happens after you’ve arrived?</button>
+<div class="inside">
 <p>So all your documents and visa are ready, you’ve finally said goodbye to your family, friends and pet iguana, and you’re all set to fly to China. Great! Our support won’t stop there though. Even after you’ve arrived, we’ll be there to help you.</p>
 <div>
 <p>We know from experience that your first week(s) in a completely new country can be rather hectic. And we believe the best way to make that transition as smooth as possible is to ensure you’re all set up from day 1 – both professionally and socially – so you can start enjoying, exploring and immersing yourself into a new lifestyle immediately!</p>
 </div>
 <p>A non-exhaustive list of things we’ll provide you with on site include:<p>
    <ul>
-      <li>Airport pick-up, hotel for your first week nd teacher training</li>
-      <li>Reliable contacts to find accomodation</li>
+      <li>Airport pick-up, hotel for your first week and teacher training</li>
+      <li>Reliable contacts to find accommodation</li>
       <li>Contacts to certified Chinese language centers and private tutors</li>
       <li>Networking events to connect with the large local expat community in Shenzhen (or the city where you have been placed)</li>
       <li>For teachers moving to Shenzhen, our exclusive ‘Shenzhen Expat Guide’, providing you with tips on all the areas to explore in the city, including recommendations on bars, restaurants, gyms, and much more</li>
     </ul>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapser");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
 
 
 

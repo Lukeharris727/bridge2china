@@ -16,11 +16,17 @@
 title: Bridge To China
 
 description: >- # this means to ignore newlines until "baseurl:"
-  Change your life. Experience a new culture. Travel the world. Join us now!.
-baseurl: "bridge2china.co.uk" # the subpath of your site, e.g. /blog
+  Change your life. Experience a new culture. Travel the world. Join us now!
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 logo:                  /icons/bridge.png
+
+author:
+  name: Alex Stankovich
+  social:
+    #facebook: https://facebook.com/bridge2china
+    #instagram: https://instagram.com/bridge2china
 
 menu:
   - title:             About Us
@@ -44,6 +50,7 @@ markdown: kramdown
 theme: jekyll-theme-hydejack
 plugins:
   - jekyll-feed
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
