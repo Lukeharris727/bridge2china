@@ -139,8 +139,8 @@ input[type=submit]:hover {
   </div>
 
 <div class="container">
-  <form action="https://formspree.io/info@bridge2china.co.uk" method="POST">
-    <label for="name">Name!!</label>
+  <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+    <label for="name">Name</label>
     <input type="text" id="name" name="name" placeholder="Your name.." required>
 
     <label for="nationality">Nationality</label>
