@@ -238,7 +238,69 @@ input[type=submit]:hover {
     </select>
 
 
+    <label for="checkbox">Native Language</label>
+    <label class="checkbox">English
+      <input type="radio" name="radio" value="radio1">
+      <span class="checkmark"></span>
+    </label>
+    <label class="checkbox">Other
+      <input type="radio" name="radio" value="radio2" id="myCheck" onclick="myFunction1()">
+      <span class="checkmark"></span>
+    </label>
 
+    <input type="text" id="text" name="language" placeholder="Enter your native language.." style="display:none" required>
+
+    <script>
+      function myFunction1() {
+      var item = document.getElementById("myCheck");
+      var text = document.getElementById("text");
+      if (item.checked == true){
+      text.style.display = "block";
+      } else {
+      text.style.display = "none";
+        }
+      }
+    </script>
+
+    <label for="education">Education</label>
+    <select id="education" name="education">
+      <option value="lower than bachelor">Lower Than Bachelor</option>
+      <option value="bachelor">Bachelor</option>
+      <option value="master">Master</option>
+      <option value="higher than master">Higher Than Master</option>
+    </select>
+
+    <label for="checkbox">Program</label>
+    <label class="checkbox">English Teacher
+      <input type="checkbox" name="radio" value="radio1" id="english" onclick="myFunction()">
+      <span class="checkmark"></span>
+    </label>
+    <label class="checkbox">Subject Teacher
+      <input type="checkbox" name="radio" value="radio2">
+      <span class="checkmark"></span>
+    </label>
+    <label class="checkbox">Dance Teacher
+      <input type="checkbox" name="radio" value="radio3">
+      <span class="checkmark"></span>
+    </label>
+    <label class="checkbox">Sports/Physical Education Teacher
+      <input type="checkbox" name="radio" value="radio4">
+      <span class="checkmark"></span>
+    </label>
+
+    <input type="text" id="text1" name="language" placeholder="Enter your TEFL/TESOL qualifications.." style="display:none" required>
+
+      <script>
+      function myFunction() {
+      var checkBox = document.getElementById("english");
+      var text = document.getElementById("text1");
+      if (checkBox.checked == true){
+      text.style.display = "block";
+      } else {
+      text.style.display = "none";
+        }
+      }
+    </script>
 
     <label for="availability">Availability To Start</label>
     <select id="availability" name="availability">
