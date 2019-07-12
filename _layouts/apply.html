@@ -17,6 +17,7 @@
 layout: base
 ---
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -56,23 +57,85 @@ input[type=submit]:hover {
   width: 100%;
 }
 
-.header h3 {
+.heading h3 {
   font-weight: bold;
   font-size: 25px;
 }
 
-.header p {
+.heading p {
   font-style: italic;
   font-size: 15px;
+}
+
+/* The container */
+.checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #DEDEDE;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.checkbox input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.checkbox .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }
 
 </style>
 </head>
 <body>
-
-  <div class="header">
-    <h3>Contact Us!</h3>
-    <p>We would love to hear from you!</p>
+  <div class="heading">
+    <h3>Apply Now!</h3>
+    <p>Fill out the fields below!</p>
   </div>
 
 <div class="container">
@@ -80,28 +143,27 @@ input[type=submit]:hover {
     <label for="name">Name</label>
     <input type="text" id="name" name="name" placeholder="Your name.." required>
 
-    <label for="number">Phone Number</label>
-    <input type="text" id="number" name="phonenumber" placeholder="Your phone number.." required>
+    <label for="nationality">Nationality</label>
+    <input type="text" id="nationality" name="nationality" placeholder="Your nationality.." required>
 
     <label for="email">Email</label>
     <input type="text" id="email" name="_replyto" placeholder="Your email address.." required>
 
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="ireland">Ireland</option>
-      <option value="new zealand">New Zealand</option>
-      <option value="south africa">South Africa</option>
-      <option value="uk">UK</option>
-      <option value="usa">USA</option>
-       <option value="other">Other</option>
+
+
+    <label for="availability">Availability To Start</label>
+    <select id="availability" name="availability">
+      <option value="sep2019">September 2019</option>
+      <option value="feb2020">February 2020</option>
+      <option value="sep2020">September 2020</option>
     </select>
 
-    <label for="subject">What would you like to contact us about?</label>
+    <label for="subject">Why do you want to work in China?</label>
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
+
     <input type="submit" value="Send">
+
   </form>
 </div>
 
